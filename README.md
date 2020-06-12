@@ -1,6 +1,6 @@
 # Middleman
 
-Simple workaround to the problem of a borwser-based application (e.g. AngularJS) needing to call an external API which CORS would normally block (becuase the API doesn't include the relevant header).
+Simple workaround to the problem of a borwser-based application (e.g. AngularJS) needing to call an external API which CORS would normally block (becuase the target API's response doesn't include the relevant header).
 
 Let's say you host this node server on http://localhost:8000.
 
