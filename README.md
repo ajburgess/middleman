@@ -2,7 +2,7 @@
 
 Simple workaround to the problem of a borwser-based application (e.g. AngularJS) needing to call an external API which CORS would normally block (becuase the target API's response doesn't include the relevant header).
 
-Let's say you host this node server on http://localhost:8000.
+Let's say you host this node server on http://localhost:8000
 
 Let's assume the real API URL your browser code is trying to call is https://acme.com/customers/north?sort=name
 
