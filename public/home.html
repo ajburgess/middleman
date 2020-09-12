@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Middleman</title>
+</head>
+<body>
+    <h1>Middlenam</h1>
+    <p>You're trying to connect your Angular, React or Vue web app to a remote HTTP REST API.</p>
+    <p>But the remote API has CORS protection enabled, and cannot be called by your web app.</p>
+    <p>You don't have control over the remote API, and so cannot change its CORS policy.</p>
+    <p>What can you do?</p>
+    <p>Use middleman!</p>
+    <p>Connect your web app to the middleman server, and let it make the HTTP REST API calls on your behalf.
+        Because middleman runs server-side, it will be able to call any API, even those protected by CORS.
+        The responses sent back from middleman include the Access-Control-Allow-Origin: * header, and
+        so your web app API calls will always work.
+    </p>
+    <p>If the real API URL is <code>https://acme.com/api/add?a=1&amp;b=2</code> then instead
+        use the middleman API URL <code>https://ajb-middleman.azurewebsites.net/https-acme.com/api/add?a=1&b=2</code>
+    </p>
+</body>
+</html>
