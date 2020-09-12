@@ -8,10 +8,10 @@ const app = express();
 app.use(bodyParser.json());
 app.use(cors());
 
-app.all("/:protocol(https?)-:domain/:path*", (req, res) => {
+app.all("/:protocol(https?)-:domain/:path(*)", (req, res) => {
     const protocol = req.params.protocol;
     const domain = req.params.domain;
-    const path = req.params.path + req.params[0];
+    const path = req.params.path;
     const query = Object.keys(req.query).map(key => key + '=' + encodeURIComponent(req.query[key])).join('&');
     const newUrl = protocol + "://" + domain + "/" + path + (query ? "?" + query : "");
 
